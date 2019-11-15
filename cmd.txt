@@ -1,0 +1,25 @@
+git clone https://github.com/%user_login%/%repo_name%.git
+привязка
+
+налаштування
+git config user.name ivan.ivanov
+git config user.email ivanov@example.com
+
+статус
+git status
+
+коміт
+зміни у файлі
+git add %file_path%
+коміт
+git commit -m "%commit_message%"
+
+історія змін
+git log /git log --name-only.
+
+Загрузка локальных изменений в удаленный репозиторий
+git push origin master
+
+скачування з репозиторію
+git pull
+
