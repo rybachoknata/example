@@ -1,6 +1,8 @@
 http://git-scm.com/downloads
 "C:\Program Files\Git\git-bash.exe"
 
+https://git-scm.com/book/en/v2
+
 -------------
 D:\Natasha_work\KPI\example	-	dir
 https://github.com/BogdanOros/micronaut-predator
@@ -17,8 +19,8 @@ git config user.email ivanov@example.com
 все установленные настройки 
 git config --list --show-origin
 
-create
-add
+1. create
+1-n add - for every files
 commit
 
 ---
@@ -27,6 +29,7 @@ init
 
 клонування
 git clone https://server/namespace/project.git
+git clone https://github.com/rybachoknata/example.git
 
 статус
 git status
