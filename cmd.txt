@@ -17,12 +17,14 @@ git config user.name ivan.ivanov
 git config user.email ivanov@example.com
 
 все установленные настройки 
-git config --list --show-origin
+git config --list --show-origin /git config -l/
 
 1. create
-1-n add - for every files
-commit
+2. 1-n add - for every files add to stage
+3. 1-m commit -a -m "" - for every stage make commit
 
+or
+2-3 add file, commit -m
 ---
 створенн€ репо
 init
@@ -56,3 +58,18 @@ https://github.com/andreiled/mipt-cs-4sem/wiki/%D0%9F%D0%BE%D1%88%D0%B0%D0%B3%D0
 https://www.youtube.com/watch?v=vFj2-bKGwkw
 
 https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8#r_git_amend
+
+Initial Git Cheat Sheet
+
+Check out the following links for more information:
+
+The Linux kernel documentation itself, as well as impassioned opinions from other developers. 
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/submitting-patches.rst?id=HEAD
+http://stopwritingramblingcommitmessages.com/
+https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
+
+https://help.github.com/articles/setting-your-email-in-git/
+https://help.github.com/articles/keeping-your-email-address-private/
+
+You can check out "Setting your email in Git" and "Keeping your email address private" on the GitHub help site for how to do this. 
+
