@@ -1,3 +1,8 @@
+head - pointer to current branch
+stage - snapshort the tracking files
+
+
+
 http://git-scm.com/downloads
 "C:\Program Files\Git\git-bash.exe"
 
@@ -24,7 +29,7 @@ git config --list --show-origin /git config -l/
 3. 1-m commit -a -m "" - for every stage make commit
 
 or
-2-3 add file, commit -m
+3.1-3.2 add file, commit -m
 ---
 створення репо
 init
@@ -43,8 +48,25 @@ git add %file_path%
 коміт
 git commit -m "%commit_message%"
 
+відмінність та комміт із підтвердженням
+git diff - show not staged diff
+git diff --stage - show staged but not commited diff
+git add -p - show diff and ask confirmation
+
+видалення
+git rm
+переіменування
+
+git mv
+
 історія змін
 git log /git log --name-only.
+git log -p - show associated patches
+git log --stat - statistic
+
+git show number - show log by number
+
+
 
 Загрузка локальных изменений в удаленный репозиторий
 git push origin master
