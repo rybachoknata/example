@@ -7,6 +7,8 @@ http://git-scm.com/downloads
 "C:\Program Files\Git\git-bash.exe"
 
 https://git-scm.com/book/en/v2
+https://linuxacademy.com/blog/linux/git-terms-explained/
+https://www.hostinger.com/tutorials/basic-git-commands
 
 -------------
 D:\Natasha_work\KPI\example	-	dir
@@ -15,13 +17,13 @@ https://github.com/rybachoknata
 
 ------------
 git clone https://github.com/%user_login%/%repo_name%.git
-привязка
+РїСЂРёРІСЏР·РєР°
 
-налаштування
+РЅР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ
 git config user.name ivan.ivanov
 git config user.email ivanov@example.com
 
-все установленные настройки 
+РІСЃРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё 
 git config --list --show-origin /git config -l/
 
 1. create
@@ -31,48 +33,48 @@ git config --list --show-origin /git config -l/
 or
 3.1-3.2 add file, commit -m
 ---
-створення репо
+СЃС‚РІРѕСЂРµРЅРЅСЏ СЂРµРїРѕ
 init
 
-клонування
+РєР»РѕРЅСѓРІР°РЅРЅСЏ
 git clone https://server/namespace/project.git
 git clone https://github.com/rybachoknata/example.git
 
-статус
+СЃС‚Р°С‚СѓСЃ
 git status
 
-коміт
-зміни у файлі
+РєРѕРјС–С‚
+Р·РјС–РЅРё Сѓ С„Р°Р№Р»С–
 git add %file_path%
 
-коміт
+РєРѕРјС–С‚
 git commit -m "%commit_message%"
 
-відмінність та комміт із підтвердженням
+РІС–РґРјС–РЅРЅС–СЃС‚СЊ С‚Р° РєРѕРјРјС–С‚ С–Р· РїС–РґС‚РІРµСЂРґР¶РµРЅРЅСЏРј
 git diff - show not staged diff
 git diff --staged - show staged but not commited diff
 git add -p - show diff and ask confirmation
 
-видалення
+РІРёРґР°Р»РµРЅРЅСЏ
 git rm
-переіменування
+РїРµСЂРµС–РјРµРЅСѓРІР°РЅРЅСЏ
 git mv
 .gitignore - contains names of ignore files
 
-відкат до змін, якщо ще не в stage
+РІС–РґРєР°С‚ РґРѕ Р·РјС–РЅ, СЏРєС‰Рѕ С‰Рµ РЅРµ РІ stage
 git checkout (-p)
 
-відкат до змін, що в stage
+РІС–РґРєР°С‚ РґРѕ Р·РјС–РЅ, С‰Рѕ РІ stage
 git reset HEAD filename
 
-виправлення попереднього комміта (локально, оскільки переписує історію локального репозиторію)
+РІРёРїСЂР°РІР»РµРЅРЅСЏ РїРѕРїРµСЂРµРґРЅСЊРѕРіРѕ РєРѕРјРјС–С‚Р° (Р»РѕРєР°Р»СЊРЅРѕ, РѕСЃРєС–Р»СЊРєРё РїРµСЂРµРїРёСЃСѓС” С–СЃС‚РѕСЂС–СЋ Р»РѕРєР°Р»СЊРЅРѕРіРѕ СЂРµРїРѕР·РёС‚РѕСЂС–СЋ)
 git commit --amend allows us to modify and add changes to the most recent commit
 
-Rollbacks - відкат ()
-git revert HEAD - новий комміт, що видаляє зміни
+Rollbacks - РІС–РґРєР°С‚ ()
+git revert HEAD - РЅРѕРІРёР№ РєРѕРјРјС–С‚, С‰Рѕ РІРёРґР°Р»СЏС” Р·РјС–РЅРё
 
 
-історія змін
+С–СЃС‚РѕСЂС–СЏ Р·РјС–РЅ
 git log /git log --name-only.
 git log -p - show associated patches (-2 - how many lines)
 git log --stat - statistic
@@ -81,12 +83,28 @@ git show number - show log by number
 
 
 
-Загрузка локальных изменений в удаленный репозиторий
+Р—Р°РіСЂСѓР·РєР° Р»РѕРєР°Р»СЊРЅС‹С… РёР·РјРµРЅРµРЅРёР№ РІ СѓРґР°Р»РµРЅРЅС‹Р№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 git push origin master
 
-скачування з репозиторію
+СЃРєР°С‡СѓРІР°РЅРЅСЏ Р· СЂРµРїРѕР·РёС‚РѕСЂС–СЋ
 git pull
 
+git clone url - cloning repo by url
+git config -- global credential.helper cache - password caching (15 min)
+
+git clone URL	Git clone is used to clone a remote repository into a local workspace
+git push	Git push is used to push commits from your local repo to a remote repo
+git pull	Git pull is used to fetch the newest updates from a remote repository
+
+pull  - push 
+
+HTTP for read only access, and the push URL use HTTPS or SSH for access control. 
+
+git remote show origin - info about status remote repo
+git fetch - This command copies the commits done in the remote repository to the remote branches,
+git pull instantly merges while git fetch only retrieves remote updates
+fetch - merge - push 
+git pull will fetch the remote copy of the current branch and automatically try to merge it into the current local branch. 
 
 https://github.com/andreiled/mipt-cs-4sem/wiki/%D0%9F%D0%BE%D1%88%D0%B0%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5-%D1%81-git-%D0%B8-github-%D0%B4%D0%BB%D1%8F-%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%BE%D0%B2
 
@@ -128,11 +146,11 @@ There are many useful git cheatsheets online as well. Please take some time to r
 Git Revert Cheat Sheet
 
 git checkout is effectively used to switch branches.
-git reset basically resets the repo, throwing away some changes. It’s somewhat difficult to understand, so reading the examples in the documentation may be a bit more useful.
+git reset basically resets the repo, throwing away some changes. ItвЂ™s somewhat difficult to understand, so reading the examples in the documentation may be a bit more useful.
 There are some other useful articles online, which discuss more aggressive approaches to resetting the repo.
 
 git commit --amend is used to make changes to commits after-the-fact, which can be useful for making notes about a given commit.
-git revert makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.
+git revert makes a new commit which effectively rolls back a previous commit. ItвЂ™s a bit like an undo command.
 
 There are a few ways you can rollback commits in Git.
 
@@ -142,3 +160,47 @@ Feel free to read more here:
 
     https://en.wikipedia.org/wiki/SHA-1
     https://github.blog/2017-03-20-sha-1-collision-detection-on-github-com/
+	
+branch for separate  new features
+
+git branch - current branch
+git branch new_branch
+git checkout new_branch
+git checkout -b newer_branch
+git branch -d newer_branch
+git branch -D newer_branch
+
+adding branch to master \\merge history
+git merge new_branch
+fast-forward all commit is also in new branch
+3 way merge - history od 2 branches is diff
+
+Git Branches and Merging Cheat Sheet
+
+Command	Explanation & Link
+git branch	Used to manage branches
+git branch <name> 	Creates the branch
+git branch -d <name>	Deletes the branch
+git branch -D <name>	Forcibly deletes the branch
+git checkout <branch> 	Switches to a branch.
+git checkout -b <branch>	Creates a new branch and switches to it.
+git merge <branch> 	Merge joins branches together.
+git merge --abort	If there are merge conflicts (meaning files are incompatible), --abort can be used to abort the merge action.
+git log --graph --oneline	This shows a summarized view of the commit history for a repo.
+
+git checkout experimental - if branch is remote it is maked locally
+
+Command	Explanation & Links
+git remote 	Lists remote repos
+git remote -v	List remote repos verbosely
+git remote show <name>	Describes a single remote repo
+git remote update	Fetches the most up-to-date objects
+git fetch	Downloads specific objects
+git branch -r	Lists remote branches; can be combined with other branch arguments to manage remote branches
+
+In order to get the contents of a remote branch without automatically merging, which of these commands should we use? git remote update
+If we need to find more information about a remote branch, which command will help us? git remote show origin
+What command will download remote branches from remote repositories without merging the content with your current workspace automatically? git fetch
+What type of merge creates a new merge commit? fast-forward merge
+What method of getting remote contents will automatically merge the remote branch with the current local branch? git pull
+
