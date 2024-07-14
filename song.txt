@@ -9,3 +9,4 @@ Make a pull in the local repository and make sure that the commit you created on
 
 
 finish my song
+bye
